@@ -28,6 +28,7 @@ Forcepoint NGFW vs pfSense Comparison
 
 # 2. Pros
 |No|--Forcepoint NGFW--|--pfSense--|
+|--|-------------------|-----------|
 |1|Easy to manage and make changes on - ACL's are done with ease.|pfSense is an excellent firewall - It logs all of your traffic. It has packages you can install to snort bad traffic.|
 |2|Easy USB initial configuration - The easy initial setup of a new location and firewall saves massive time. Settings are automatically pushed to new nodes upon contact with the controller.|pfSense has a tool called "p0f" which allows you to see what type of OS is trying to connect to you. You can filter these results and you can also block a specific OS from connecting to you.|
 |3|Low Complexity - This system does not have a lot of complexity requiring extra hours, training, or personnel to manage.|pfSense is an excellent load-balancer: (Multi-WAN and Server Load Balancing) The fail-over/aggregation works very well. This is perfect if your business uses multiple ISP's to ensure your customers are always able to access their data. Also helps with bandwidth distribution as well.|
@@ -39,5 +40,6 @@ Forcepoint NGFW vs pfSense Comparison
 
 # 3. Cons
 |No|--Forcepoint NGFW--|--pfSense--|
+|--|-------------------|-----------|
 |1|Poor Reporting - It exists but even when calling in to support for assistance, they have no idea how to tackle customizing reports or searching for specific data.|There is no API for making changes. This can be a hindrance in environments where auto-deploying something needs firewall rules or HAProxy configs updated. Since all settings are stored in an XML file and then configs are generated from that, even manually updating config files cannot be done.|
 |2||Beware that some network cards can have issues. pfSense is based on FreeBSD, so it's best to look on their compatibility list before deploying.|
